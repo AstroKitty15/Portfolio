@@ -1,0 +1,312 @@
+* {
+   box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Zilla Slab', serif;
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.none {
+    display: none !important;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    /* Определяем модель flex-box для блока .header */
+    display: flex;
+    flex-direction: column; /* Выстраиваем flex-элементы в колонку, основная ось Y */
+    justify-content: center; /* Выравнивание по основной оси */
+    align-items: center; /* Выравнивание по поперечной оси */
+
+    width: 100%;
+    height: 100vh;
+
+    /* background-image: url("./../img/header/header.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.header-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%; /* 1.3*56=130% (72.8px) */
+    text-align: center;
+    color: #ffff;
+    text-shadow: 3px -1px 20px #333;
+}
+
+.header-subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: 3px -1px 20px #333;
+    color: #ffff;
+}
+
+.header-arrow {
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50% 0);
+}
+
+/* Portfolio */
+
+main {
+    background-color: #f4e0d5;
+}
+
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+
+.portfolio-header {
+    margin: 0;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: black;
+}
+
+.portfolio-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin-bottom: 30px;
+    max-width: 540px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px 0px #7E9BBD59;
+    transition: transform 0.2s ease-in;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card-link {
+    display: block;
+    padding: 20px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+.card-link:hover {
+    color: #1b5c5b;;
+}
+
+.card:last-child, 
+.card:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.card-img {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 45px;
+    padding-bottom: 130px;
+    background: #466650;
+    color: #fff;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-col {
+    max-width: 350px;
+    flex-grow: 1;
+}
+
+.footer-copyright {
+    /* color: #7E9EC9; */
+    line-height: 1.3;
+}
+
+.footer-copyright-name {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer-icons p {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.footer-icons a:last-child {
+    width: 32px;
+    height: 34px;
+    margin-left: 23px;
+}
+
+.footer-icons-row {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icons-row > * + * {
+    margin-left: 30px;
+}
+
+.footer-button {
+    display: inline-block;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 0.2s ease-in;
+}
+
+.footer-button:hover {
+    background-color: white;
+    color: #1E4776;
+}
+
+.footer-contacts p {
+    margin: 15px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    /* color: #7E9EC9; */
+}
+
+/* Project */
+
+.project {
+    padding: 80px 0 120px 0;
+    text-align: center;
+}
+
+.project-header {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.3;
+}
+
+.project-img {
+    margin-bottom: 70px;
+}
+
+.project-description {
+    margin: 0 auto 60px;
+    max-width: 730px;
+}
+
+.project-description p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project-description p a {
+    text-decoration: none;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #466650;
+}
+
+.project-btn-back {
+    display: inline-block;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border: 3px solid #466650;
+    border-radius: 50px;
+    
+    color: #466650;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 54px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 0.2s ease-in;
+}
+
+.project-btn-back:hover {
+    background-color: #466650;
+    color: white;
+}
