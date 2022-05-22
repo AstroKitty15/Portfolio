@@ -107,6 +107,7 @@ main {
 }
 
 .card {
+   display: flex;
     margin-bottom: 30px;
     max-width: 540px;
     background-color: #fff;
