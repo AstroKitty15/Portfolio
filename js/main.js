@@ -4,3 +4,5 @@ $(window).on('load', function(){
         bgColor: '#3c5621'
     })
 });
+
+AOS.init();
